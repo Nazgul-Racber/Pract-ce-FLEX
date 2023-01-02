@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1.5rem;
+  background-color: rgb(34, 170, 163);
+  color: purple;
+  font-size: 1.5rem;
+  align-items: center;
+}
+.fa-basket-shopping::after {
+  content: "8";
+  color: white;
+  position: relative;
+  left: -5px;
+  bottom: 10px;
+  background-color: red;
+  padding: 5px;
+  border-radius: 50%;
+}
+a {
+  color: purple;
+}
+.right {
+  flex-basis: 32%;
+  padding: 0 1rem 0 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.right a {
+  padding: 1rem;
+}
+.right section {
+  gap: 0.5rem;
+  display: flex;
+  justify-content: end;
+}
+.left a {
+  padding: 1rem;
+}
+.left {
+  flex: 32%;
+  gap: 1rem;
+  text-align: center;
+}
+.center {
+  flex: 32%;
+}
+article p {
+  padding: 1rem;
+  margin: 1rem;
+}
+
+footer {
+  background-color: rgb(34, 170, 163);
+  color: purple;
+  display: flex;
+  justify-content: space-evenly;
+  gap: 2rem;
+  padding: 1rem 1rem;
+  font-size: 0.9rem;
+}
+footer section {
+  flex: 1;
+}
+.footer__section--column {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+footer span {
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+footer {
+  position: absolute;
+  bottom: 0;
+  font-size: 1.2rem;
+}
